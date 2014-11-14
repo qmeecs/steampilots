@@ -1,0 +1,98 @@
+html, body { margin:0; padding: 0; overflow:hidden; font-size:12px; font-weight: bold; background:#000; }
+#cr-stage {  border:1px; color:#fff; font-size:20px; background: #000; font-family: Verdana; position:absolute; top:0px; left:0px; z-index: 2 }
+#interface { position:absolute; top:0px; left:0px; z-index: 10; }
+.text{ position: absolute; width: 100px; height: 10px;  margin: 5px; color: #000;  font-weight: bold; z-index: 1; font-family: Arial}
+.msm { background: url(../assets/img/logo_msm.jpg); width:50px; height:50px; cursor: pointer; }
+/*
+.score{ right:0px; background: url('../assets/img/items.png') no-repeat 105px -20px; height: 26px; text-align: right; padding-right: 25px; font-size:17px; margin-top: 12px;}
+*/
+
+/* UI */
+.life{ height: 27px;
+   width: 200px;
+   position: absolute;
+   top: 7px;
+   left: 27px;
+   font-size: 14px}
+.ship{ margin-top: 3px; float:left; background: url(../assets/img/lifes.png);width:30px; height:20px; margin-left: 0px }
+.player_data { position:absolute; top:10px; right: 10px; }
+.lowerUI { height: 100px; width: 800px; position: absolute; top: 500px; left: 0px; background: url(../assets/img/consolle.jpg); }
+.upperUI { position:absolute; top:10px; left:0px; width:800px;}
+#p_score { position: absolute; top:60; left:20px; font-size: 28px; font-family: Georgia; color:#000;}
+#p_level { position: absolute; top:60; right:20px; font-size: 28px; font-family: Georgia; color:#000; }
+.gold_key { position:absolute; left: 246px; top: 42px; }
+.silver_key { position:absolute; left: 174px; top: 42px; }
+
+.top_ui_anno { font-size: 20px; font-family: Georgia; color:#000; }
+
+.btn_back { width:77px; height:34px; position:absolute; top:15px; right:10px; background:url(../assets/img/btn_back.jpg); border-radius: 5px; cursor:pointer; }
+.btn_pause { width:77px; height:34px; position:absolute; top:55px; right:10px; background:url(../assets/img/btn_pause.jpg); border-radius: 5px; cursor:pointer; }
+
+#timer { position:absolute; top: 10px; left:320px; font-family: Georgia; font-size: 30px }
+#player_name { position:absolute; top: 60px; left:320px; font-family: Georgia; font-size: 20px }
+
+#login_form,#signup_form { height: 200px;
+   width:250px;
+   position: absolute;
+   top: 100px;
+   right: 80px;
+   z-index: 21;
+   text-align: center;
+   border-radius: 10px;
+   padding-bottom: 10px;
+   background: url(../assets/img/white_30.png);
+   font-size: 14px
+ }
+ #signup_form { height:280px; text-align: center;}
+ .label { width:100px; float:left; min-height: 30px }
+ .field { width:100px; float:left; }
+.mini-field { width:29px; float:left; }
+
+#annotation { color:#999; border:1px solid #999; font-size: 30px }
+
+#message_box { height:600px; width: 800px; background: url(../assets/img/black_70.png); position:absolute; top:0px; left:0px; z-index: 100; visibility:hidden; }
+#message { background: url(../assets/img/alert_bg.jpg); border-radius:10px; width:300px; height:277px; position:absolute; left:250px; bottom:161px;}
+#message p { padding-left: 45px; padding-top: 25px; padding-right: 45px; padding-bottom: 25px; font-size: 15px; font-family: "Georgia" }
+
+.bigText { font-size: 100px; text-align: center; font-family: Georgia; font-weight: bold; padding-top: 80px; color: #FFF;
+      text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+ }
+.gameOverText { font-famyly:"Georgia";font-size:22px; text-align:center;}
+.totalScore { color: #F00000; font-size: 36px;  }
+.statsScore { color: #FF0;}
+.statsText { color:#F00; font-size: 20px; text-align: center }
+.leaderBoardText { color:#FF0; font-size: 20px}
+
+ a { color:#333; }
+
+.button {
+   border-top: 1px solid #f7f797;
+   background: #d6b065;
+   background: -webkit-gradient(linear, left top, left bottom, from(#9c943e), to(#d6b065));
+   background: -webkit-linear-gradient(top, #9c943e, #d6b065);
+   background: -moz-linear-gradient(top, #9c943e, #d6b065);
+   background: -ms-linear-gradient(top, #9c943e, #d6b065);
+   background: -o-linear-gradient(top, #9c943e, #d6b065);
+   padding: 4px 10px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 15px;
+   font-family: Georgia, Serif;
+   text-decoration: none;
+   vertical-align: middle;
+}
+.button:hover {
+   border-top-color: #785a28;
+   background: #785a28;
+   color: #ccc;
+}
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+}

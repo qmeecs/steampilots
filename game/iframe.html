@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+        <script type="text/javascript" src="js/defs.js"></script>
+        <script type="text/javascript" src="js/lib/jquery-v1.8.2.js"></script>
+        <script type="text/javascript" src="js/lib/crafty-v0.5.3.js"></script>
+        <script type="text/javascript" src="js/assets.js"></script>
+        <script type="text/javascript" src="js/components.js"></script>
+        <script type="text/javascript" src="js/scenes/intro.js"></script>
+        <script type="text/javascript" src="js/scenes/game.js"></script>
+        <script type="text/javascript" src="js/scenes/gameover.js"></script>
+        <script type="text/javascript" src="js/scenes/portal.js"></script>
+        <script type="text/javascript" src="js/engine.js"></script>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        
+        <div id="message_box"> <div id="message"></div> </div>
+
+        <div id="interface">
+                <div class="upperUI" id="upperUI">
+                    <div id="p_score"></div>
+                    <div id="p_level"></div>
+                </div>
+                <div class="lowerUI" id="lowerUI">
+                    <div class="life"> </div>
+                    <div class="gold_key" id="gold_key"><img src="assets/img/key_gold_m.png" width="25"></div>
+                    <div class="silver_key" id="silver_key"><img src="assets/img/key_silver_m.png" width="25"></div>
+
+                    <div class="btn_back" onClick="javascript: Engine.util.backToMenu()"></div>
+                    <div class="btn_pause" onClick="javascript: Engine.util.pause()"></div>
+
+                    <div id="timer">-:--</div>
+                    <div id="player_name"></div>
+                </div>
+        </div>
+        
+        <div id="login_form">
+           <h2>WELCOME PILOTS!</h2>
+           <p>Username: <input type="text" id="un"></p>
+           <p>Password: <input type="password" id="pw"></p>
+           <p><input type="button" class="button" onClick="javascript:Engine.util.tryLogin();" value="Login">
+           <input type="button" class="button" onClick="javascript:Engine.util.registerUser();" value="Register"></p>
+        </div>
+
+        <div id="signup_form" style="display: none">
+           <h2>Register</h2>
+           <div class='label'>Username:</div><input class="field" type="text" id="s_un">
+           <br style="clear:both">
+           <div class='label'>Password:</div><input type="password" class="field" id="s_pw">
+           <br style="clear:both">
+           <div class='label'>E-mail:</div><input type="test" class="field" id="s_email">
+           <br style="clear:both">
+           <div class='label'>Date of birth:</div>
+           <input type="text" class="mini-field" id="s_month" maxlength="2" placeholder="mm">
+           <input type="text" class="mini-field" id="s_day" maxlength="2" placeholder="dd">
+           <input type="text" class="mini-field" id="s_year" maxlength="2" placeholder="yy">
+           <br style="clear:both">
+           <div class='label'>Gender</div>
+           <div class='label'>
+           M <input type="radio" id="s_gender" value="m">
+           F <input type="radio" id="s_gender" value="f">
+           </div>
+           <br style="clear:both">
+           <input type="button" class="button" onClick="javascript:Engine.util.backToLogin();" value="Back">
+           <input type="button" class="button" onClick="javascript:Engine.util.trySignUp();" value="Register">
+        </div>
+
+        
+        <div id="cr-stage" style="overflow: hidden">
+            
+        </div>
+        <div style="float: right;">
+            <div class="msm" onClick="javascript:window.location = 'http://moonsubmarine.com';"></div>
+        </div>
+    </body>
+</html>
